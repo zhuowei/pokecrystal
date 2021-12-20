@@ -45,7 +45,8 @@ _UnownPuzzle:
 	ld [wHoldingUnownPuzzlePiece], a
 	ld [wUnownPuzzleCursorPosition], a
 	ld [wUnownPuzzleHeldPiece], a
-	ld a, %10010011
+	;ld a, %10010011
+	ld a, %11001001
 	ldh [rLCDC], a
 	call WaitBGMap
 	ld b, SCGB_UNOWN_PUZZLE
